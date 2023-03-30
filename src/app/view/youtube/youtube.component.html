@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<body class="min-vh-100 d-flex flex-column justify-content-center bg-light">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <h1 class="display-5 text-center mb-4">YouTube Downloader</h1>
+        <div class="card shadow">
+          <div class="card-body">
+            <form (ngSubmit)="showVideos()" class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="videoUrl" class="text-secondary">Video URL</label>
+                <input type="text" class="form-control" id="videoUrl" name="videoUrl" placeholder="Paste youtube link" [(ngModel)]="videoUrl" required>
+                <div class="invalid-feedback text-danger">Please enter a valid video URL.</div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block mt-3">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div *ngIf="videos?.length" class="my-5 card shadow">
+          <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th class="text-center">Quality</th>
+                <th class="text-center">Size (MB)</th>
+                <th class="text-center"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let video of videos">
+                <td class="text-center">{{ video.label }} (mp4)</td>
+                <td class="text-center">{{ video.mb.toFixed(1) }} MB</td>
+                <td class="text-center">
+                  <button class="btn btn-primary" (click)="downloadVideo(video.label)">Download</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div *ngIf="videosm4a?.length" class="my-5 card shadow">
+          <table class="table table-striped table-hover">
+            <thead class="thead-dark">
+              <tr>
+                <th class="text-center">Quality</th>
+                <th class="text-center">Size (MB)</th>
+                <th class="text-center"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let video of videosm4a">
+                <td class="text-center">{{ "M4A" }}</td>
+                <td class="text-center">{{ video.megaBytes.toFixed(1) }} MB</td>
+                <td class="text-center">
+                  <button class="btn btn-primary" (click)="downloadM4a(video.bytes)">Download</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div *ngIf="videos?.length && showThumbnail" class="my-5 card shadow" style="max-width: 55%; margin: 0 auto;">
+          <img class="card-img-top" src="{{ this.videoData.thumbnails[4].url}}" alt="Video thumbnail" style="max-width: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">{{ this.videoData.title }}</h5>
+            <p class="card-text"> Duration: {{ this.videoData.duration }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<app-footer></app-footer>
