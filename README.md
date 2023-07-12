@@ -1,27 +1,50 @@
+<div align="center">
+
+# VideoFetcher - Web
+
+![VisionAuditiva Logo](https://visionauditiva.azurewebsites.net/Image/logo2)
+
+</div>
+
 # VideoFetcher
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+VideoFetcher es una aplicación web desarrollada con Angular que permite obtener información de videos y descargar flujos de video y audio de YouTube.
 
-## Development server
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular V15
 
-## Code scaffolding
+## Instalación
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clona el repositorio: `git clone https://github.com/xstefano/VideoFetcher.git`
+2. Navega al directorio del proyecto: `cd VideoFetcher`
+3. Instala las dependencias: `npm install`
 
-## Build
+## Uso
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Inicia la aplicación: `ng serve`
+2. Accede a la aplicación en tu navegador a través de la URL `http://localhost:4200`.
+3. Utiliza la aplicación para buscar información de videos en YouTube y descargar flujos de video y audio.
 
-## Running unit tests
+## Contribución
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-## Running end-to-end tests
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tu contribución: `git checkout -b nombre-de-tu-rama`.
+3. Realiza los cambios y mejoras necesarias.
+4. Realiza un commit de tus cambios: `git commit -m "Descripción de los cambios"`.
+5. Envía tus cambios al repositorio remoto: `git push origin nombre-de-tu-rama`.
+6. Crea una Pull Request en GitHub describiendo tus cambios.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Licencia
 
-## Further help
+Este proyecto está licenciado bajo la Licencia GNU v3.0. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contacto
+
+Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de N00245955@upn.pe.
+
+---
+
+© 2023 xstefano | [Enlace al repositorio](https://github.com/xstefano/VideoFetcher.git)
