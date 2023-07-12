@@ -10,6 +10,16 @@
 
 VideoFetcher es una aplicación web desarrollada con Angular que permite obtener información de videos y descargar flujos de video y audio de YouTube.
 
+## Características
+
+- **Dashboard:** Pantalla principal que muestra una descripción general de la aplicación. Puedes acceder a ella a través de [https://videofetcher.azurewebsites.net/](https://videofetcher.azurewebsites.net/).
+<div align="center">
+![VisionAuditiva Pantalla1](https://visionauditiva.azurewebsites.net/Image/pantalla1)
+</div>
+- **Pantalla de YouTube:** Permite buscar información de videos en YouTube y muestra las versiones disponibles en MP4 y M4A para su descarga. Puedes acceder a esta pantalla a través de [https://videofetcher.azurewebsites.net/#/youtube](https://videofetcher.azurewebsites.net/#/youtube).
+<div align="center">
+![VisionAuditiva Pantalla2](https://visionauditiva.azurewebsites.net/Image/pantalla2)
+</div>
 ## Requisitos previos
 
 - Angular V15
